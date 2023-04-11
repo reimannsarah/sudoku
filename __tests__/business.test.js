@@ -10,6 +10,11 @@ describe('Puzzle', () => {
     const puzzle = new Puzzle();
     expect(puzzle.columns).toEqual({});
   });
+  test('should add a Row to a Puzzle', () => { 
+    const puzzle = new Puzzle();
+    const row = new Row();
+    expect(puzzle.addRow(row)).toEqual("new row here");
+  });
 
 });
 
