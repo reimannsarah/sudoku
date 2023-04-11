@@ -12,8 +12,8 @@ describe('Puzzle', () => {
   });
   test('should add a Row to a Puzzle', () => { 
     const puzzle = new Puzzle();
-    const row = new Row();
-    expect(puzzle.addRow(row)).toEqual("new row here");
+    const row = new Row("new row here");
+    expect(puzzle.addRow(row)).toEqual(puzzle.row);
   });
 
 });
