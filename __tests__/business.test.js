@@ -14,7 +14,7 @@ describe('Puzzle', () => {
     const puzzle = new Puzzle();
     const row = new Row(1);
     puzzle.addRow(row);
-    expect(puzzle.rows[1]).toEqual({"number": 1});
+    expect(puzzle.rows[1]).toEqual({"num1": 1});
   });
   test('should add a Column to a Puzzle', () => { 
     const puzzle = new Puzzle();
@@ -30,7 +30,7 @@ describe('Row', () => {
 
   test('should return a number', () => {
     const row = new Row(1);
-    expect(row.number).toEqual(1);
+    expect(row.num1).toEqual(1);
   });
   test('should return key value pairs', () => {
     const row = new Row(1,2,3,4,5,6,7,8,9);
