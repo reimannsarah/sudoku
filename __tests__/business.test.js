@@ -22,8 +22,10 @@ describe('Puzzle', () => {
   //   puzzle.addColumn(column);
   //   expect(puzzle.columns[1]).toEqual({"num1": 1});
   // });
-
-
+  test('should correctly determine the answer to a puzzle', function() {
+    const puzzle = new Puzzle;
+    expect(puzzle.checkAnswer()).toEqual(true);
+  });
 });
 
 describe('Row', () => {
@@ -46,15 +48,19 @@ describe('Row', () => {
   });
 });
 
-describe('checker', () => {
+// describe('checker', () => {
 
-  test('should return an array from the key value pairs', () => {
-    const row = new Row(1,2,3,4,5,6,7,8,9);
-    const rowArray = checker(row);
-    expect(rowArray).toEqual([1,2,3,4,5,6,7,8,9]);
-  });
-});
-
+//   test('should return an array from the key value pairs', () => {
+//     const row = new Row(1,2,3,4,5,6,7,8,9);
+//     const rowArray = checker(row);
+//     expect(rowArray).toEqual([1,2,3,4,5,6,7,8,9]);
+//   });
+  // test('should return true if the first number is 1', () => {
+  //   const row = new Row(1,2,3,4,5,6,7,8,9);
+  //   const rowArray = checker(row);
+  //   expect(rowArray[0]).toEqual([1]);
+  // });
+// });
 
 // describe('Column', () => {
 
