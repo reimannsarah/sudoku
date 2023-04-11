@@ -20,7 +20,7 @@ describe('Puzzle', () => {
     const puzzle = new Puzzle();
     const column = new Column(1);
     puzzle.addColumn(column);
-    expect(puzzle.columns[1]).toEqual({"number": 1});
+    expect(puzzle.columns[1]).toEqual({"num1": 1});
   });
 
 
@@ -50,6 +50,18 @@ describe('Column', () => {
 
   test('should return a number', () => {
     const column = new Column(1);
-    expect(column.number).toEqual(1); 
+    expect(column.num1).toEqual(1); 
+  });
+  test('should return key value pairs', () => {
+    const column = new Column(1,2,3,4,5,6,7,8,9);
+    expect(column.num1).toEqual(1);
+    expect(column.num2).toEqual(2);
+    expect(column.num3).toEqual(3);
+    expect(column.num4).toEqual(4);
+    expect(column.num5).toEqual(5);
+    expect(column.num6).toEqual(6);
+    expect(column.num7).toEqual(7);
+    expect(column.num8).toEqual(8);
+    expect(column.num9).toEqual(9);
   });
 });
