@@ -32,6 +32,18 @@ describe('Row', () => {
     const row = new Row(1);
     expect(row.number).toEqual(1);
   });
+  test('should return key value pairs', () => {
+    const row = new Row(1,2,3,4,5,6,7,8,9);
+    expect(row.num1).toEqual(1);
+    expect(row.num2).toEqual(2);
+    expect(row.num3).toEqual(3);
+    expect(row.num4).toEqual(4);
+    expect(row.num5).toEqual(5);
+    expect(row.num6).toEqual(6);
+    expect(row.num7).toEqual(7);
+    expect(row.num8).toEqual(8);
+    expect(row.num9).toEqual(9);
+  });
 });
 
 describe('Column', () => {
