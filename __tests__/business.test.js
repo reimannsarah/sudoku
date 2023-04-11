@@ -1,4 +1,4 @@
-import { Puzzle } from './../src/business.js';
+import { Puzzle, Row } from './../src/business.js';
 
 describe('Puzzle', () => {
 
@@ -12,3 +12,11 @@ describe('Puzzle', () => {
   });
 
 });
+
+describe('Row', () => {
+
+  test('should return a number', () => {
+    const row = new Row(1);
+    expect(row.number).toEqual(1);
+  })
+})
