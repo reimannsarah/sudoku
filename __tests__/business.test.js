@@ -4,7 +4,6 @@ describe('Puzzle', () => {
 
   test('should instantiate a new puzzle', () => {
     const puzzle = new Puzzle();
-    expect(puzzle.row).toEqual(row);
-    expect(puzzle.colum).toEqual(column);
+    expect(puzzle.data).toEqual("puzzle");
   });
 });
