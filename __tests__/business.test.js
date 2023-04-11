@@ -12,9 +12,16 @@ describe('Puzzle', () => {
   });
   test('should add a Row to a Puzzle', () => { 
     const puzzle = new Puzzle();
-    const row = new Row("new row here");
-    expect(puzzle.addRow(row)).toEqual(puzzle.row);
+    const row = new Row(1);
+    puzzle.addRow(row);
+    expect(puzzle.rows[1]).toEqual({"number": 1});
   });
+  test('should add a Column to a Puzzle', () => { 
+    const puzzle = new Puzzle();
+    const column = new Column("new column here");
+    expect(puzzle.addColumn(column)).toEqual(puzzle.column);
+  });
+
 
 });
 
