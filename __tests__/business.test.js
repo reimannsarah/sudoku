@@ -18,8 +18,9 @@ describe('Puzzle', () => {
   });
   test('should add a Column to a Puzzle', () => { 
     const puzzle = new Puzzle();
-    const column = new Column("new column here");
-    expect(puzzle.addColumn(column)).toEqual(puzzle.column);
+    const column = new Column(1);
+    puzzle.addColumn(column);
+    expect(puzzle.columns[1]).toEqual({"number": 1});
   });
 
 
